@@ -86,7 +86,9 @@ class RDSImage
     {
         $src_size = getimagesize($this->sourceImage);
         $this->sourceImageWidth = $src_size[0];
+        $this->newWidth = $src_size[0];
         $this->sourceImageHeight = $src_size[1];
+        $this->newHeight = $src_size[1];
     }
 
     /**
